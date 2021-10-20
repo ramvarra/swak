@@ -5,7 +5,7 @@ pipeline{
         stage("Build"){
             steps{
                 echo "Building Swak"
-                sh 'mvn package'
+                sh 'mvn -X compile'
             }
         }
     }
